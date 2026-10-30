@@ -1,0 +1,301 @@
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="#home"><svg class="logo" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="10" fill="var(--hero)"/><path d="M10 21 22 11l12 10" fill="none" stroke="#f1f3f6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 19v14h17V19" fill="none" stroke="#f1f3f6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 16.5v3.5" stroke="#f1f3f6" stroke-width="1.6" stroke-linecap="round"/><path d="M19.8 20.2h4.4l-.5 2.6h-3.4Z" fill="#f1f3f6"/><circle cx="22" cy="25.6" r="2.8" fill="#c9963f"/><path d="M17.2 25.6h-1.4M28.2 25.6h-1.4M18.6 28.8l-1 1M25.4 28.8l1 1" stroke="#c9963f" stroke-width="1.4" stroke-linecap="round"/></svg><span class="word">Porchlight<small>Jacksonville, FL</small></span></a>
+  <nav class="links" id="links">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#areas">Areas</a>
+    <a href="#about">About Alex</a>
+    <a href="#contact">Contact</a>
+    <a href="#alex" id="dashLink" hidden>Dashboard</a>
+  </nav>
+  <div class="navcta">
+    <a class="btn sm" href="#book">Book now</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</div></header>
+
+<main>
+<!-- HOME -->
+<div class="page" data-page="home">
+  <section style="padding-top:8px"><div class="wrap">
+    <div class="hero">
+      <span class="tag" style="color:#fff">Jacksonville, FL</span>
+      <h1>Trusted help around the house in <em>Jacksonville.</em></h1>
+      <p>Tesla chargers, leaky sinks, tech help, ceiling fans and more. Book online. Pay when it's done.</p>
+      <div class="actions"><a class="btn glow" href="#book">Book a time</a><a class="btn ghost" href="#pricing">$80 per hour · pricing</a></div>
+      <div class="byline"><span class="avatar">AM</span><span>Every job done by <b>Alex Montalbano</b>.<br>Not a different guy each time.</span></div>
+      <div class="nextslot"><small>Next open slot</small><b id="nextSlot">Tomorrow, 10:00 AM</b></div>
+    </div>
+  </div></section>
+
+  <section style="padding-top:8px"><div class="wrap">
+    <div class="head"><span class="tag">For example</span><h2>Things people call Alex for</h2></div>
+    <div class="examples">
+      <span>Fix a leaky sink</span><span>Install a Tesla charger</span><span>Set up Wi-Fi</span><span>Hang a ceiling fan</span><span>Unclog a drain</span><span>Mount a TV</span><span>Add an outlet</span><span>Fix a running toilet</span><span>Put in a video doorbell</span><span>Help with a new phone or TV</span><span>Swap light fixtures</span><span>Build furniture</span><span>Hang shelves</span><span>Replace smoke alarms</span><span>Yard lights</span><span>And lots more</span>
+    </div>
+  </div></section>
+
+  <section style="padding-top:8px"><div class="wrap">
+    <div class="head row"><div class="head" style="margin:0"><span class="tag">Services</span><h2>What I do</h2></div><a class="btn ghost sm" href="#services">All services →</a></div>
+    <div class="tiles" id="homeTiles"></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="head row"><div class="head" style="margin:0"><span class="tag">Pricing</span><h2>One simple hourly rate</h2></div><a class="btn ghost sm" href="#pricing">How it works →</a></div>
+    <div class="zones" id="homeZones"></div>
+  </div></section>
+
+  <section><div class="wrap bento">
+    <div class="card">
+      <span class="tag">How it works</span>
+      <h3 style="font-size:1.5rem">How booking works</h3>
+      <ol class="steps">
+        <li><div><b>Tell me what you need</b><p class="muted">Pick a time. Nothing to pay yet.</p></div></li>
+        <li><div><b>I show up and get it done</b><p class="muted">If it's bigger than you thought, I'll let you know first.</p></div></li>
+        <li><div><b>Pay when it's done</b><p class="muted">Cash, card, Apple Pay or PayPal.</p></div></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="big">$80<span class="muted" style="font-size:1rem;font-weight:600"> / hour</span></div>
+      <b>Within 10 miles</b>
+      <p class="muted">Same price every hour. No hidden fees.</p>
+    </div>
+    <div class="card">
+      <p class="quote">"Fixed our kitchen sink and set up the Wi-Fi in one visit. Easy."</p>
+      <p class="muted" style="font-size:.88rem">Sample review · Nocatee</p>
+    </div>
+  </div></section>
+
+  <section style="padding-top:0"><div class="wrap">
+    <div class="head"><span class="tag">Service area</span><h2>All over Jax</h2></div>
+    <div class="areas" id="homeAreas"></div>
+  </div></section>
+
+  <section><div class="wrap"><div class="cta-band"><div style="display:grid;gap:8px"><h2>Got a project?</h2><p style="opacity:.75">Most jobs are one visit. Grab a slot this week.</p></div><a class="btn glow" href="#book">See open times</a></div></div></section>
+</div>
+
+<!-- PRICING -->
+<div class="page" data-page="pricing" hidden>
+  <section><div class="wrap">
+    <div class="head"><span class="tag">Pricing</span><h1 style="font-size:clamp(2.4rem,6vw,4.2rem)">Simple hourly pricing</h1><p class="muted" style="font-size:1.1rem">Pay by the hour. Your rate depends on how far you are. You pay when the job is done. Parts are extra, at cost.</p></div>
+    <div class="zones" id="priceZones"></div>
+    <div class="perks">
+      <div class="perk"><b>Book 1 hour or more</b><p class="muted">Not sure how long? Book 1 hour.</p></div>
+      <div class="perk"><b>Pay after the job</b><p class="muted">Cash, card, Apple Pay or PayPal.</p></div>
+      <div class="perk"><b>Takes longer?</b><p class="muted">I can stay at the same rate, or come back another day.</p></div>
+      <div class="perk"><b>Tips</b><p class="muted">Always optional. One tap after the job.</p></div>
+    </div>
+    <div class="card" style="margin-top:20px"><h3>Check your rate</h3><div class="inline"><input id="pZip" class="zipin" inputmode="numeric" maxlength="5" placeholder="Your ZIP" aria-label="Your ZIP code"><span id="pZipOut" class="muted">Enter a Jacksonville-area ZIP.</span></div></div>
+    <div class="cta-band" style="margin-top:28px"><h2>Ready to book?</h2><a class="btn glow" href="#book">Pick a time</a></div>
+  </div></section>
+</div>
+
+<!-- SERVICES INDEX -->
+<div class="page" data-page="services" hidden>
+  <section><div class="wrap">
+    <div class="head"><span class="tag">Services</span><h1 style="font-size:clamp(2.4rem,6vw,4rem)">Home services in Jacksonville</h1><p class="muted" style="font-size:1.1rem">Electrical, plumbing fixes, tech help and more. All at one hourly rate.</p></div>
+    <div class="tiles" id="allTiles"></div>
+  </div></section>
+</div>
+
+<!-- AREAS INDEX -->
+<div class="page" data-page="areas" hidden>
+  <section><div class="wrap">
+    <div class="head"><span class="tag">Service area</span><h1 style="font-size:clamp(2.4rem,6vw,4rem)">Where I work around Jacksonville</h1><p class="muted" style="font-size:1.1rem">Duval, St. Johns and Clay counties. Your hourly rate depends on distance.</p></div>
+    <div class="tiles" id="areaTiles"></div>
+  </div></section>
+</div>
+
+<!-- DYNAMIC SEO PAGE -->
+<div class="page" data-page="seo" hidden><section><div class="wrap" id="seoBody"></div></section></div>
+
+<!-- BOOK -->
+<div class="page" data-page="book" hidden>
+  <section style="padding-top:12px"><div class="wrap">
+    <div class="book">
+      <div>
+        <div class="progress" id="progress"><i></i><i></i><i></i><i></i></div>
+        <div class="steplabel" id="stepLabel"></div>
+
+        <div id="s1">
+          <h2 style="margin-bottom:18px">What do you need?</h2>
+          <div class="pick" id="svcPick"></div>
+          <div class="sub">Describe the job</div>
+          <textarea id="bDesc" rows="3" placeholder="e.g. Kitchen faucet is leaking. Also want help setting up a new TV." aria-label="Describe the job"></textarea>
+          <div class="sub">How many hours?</div>
+          <div class="hours" id="hours"></div>
+          <p class="muted" id="hoursHint" style="font-size:.88rem;margin-top:8px">Not sure? Book 1 hour.</p>
+          <div class="sub">Your ZIP</div>
+          <input id="bZip0" class="zipin" inputmode="numeric" maxlength="5" placeholder="32207" aria-label="Your ZIP code">
+          <div id="zoneOut"></div>
+          <div class="navrow"><span></span><button class="btn" id="to2" disabled>Continue</button></div>
+        </div>
+
+        <div id="s2" hidden>
+          <h2 style="margin-bottom:18px">Pick a time</h2>
+          <div class="days" id="days"></div>
+          <div class="slots" id="slots"></div>
+          <p class="muted" style="font-size:.85rem;margin-top:10px">Longer jobs only show start times that finish by 6 PM.</p>
+          <div class="navrow"><button class="btn ghost" data-back="1">Back</button><button class="btn" id="to3" disabled>Continue</button></div>
+        </div>
+
+        <form id="s3" hidden novalidate>
+          <h2 style="margin-bottom:6px">Your details</h2>
+          <p class="muted" style="margin-bottom:22px">This helps Alex show up ready. Fields marked * are required.</p>
+          <div class="fields">
+            <fieldset class="fs"><legend>Contact</legend>
+              <div class="fr c2"><label class="fl">First name *<input id="bFirst" autocomplete="given-name"></label><label class="fl">Last name *<input id="bLast" autocomplete="family-name"></label></div>
+              <div class="fr c2"><label class="fl">Mobile *<input id="bPhone" type="tel" autocomplete="tel" placeholder="(904) 555-1234"></label><label class="fl">Email *<input id="bEmail" type="email" autocomplete="email" placeholder="you@email.com"></label></div>
+              <label class="fl">Best way to reach you *<select id="bPref"><option value="">Choose one</option><option>Text</option><option>Phone call</option><option>Email</option></select></label>
+            </fieldset>
+            <fieldset class="fs"><legend>Job address</legend>
+              <label class="fl">Street address *<input id="bStreet" autocomplete="address-line1" placeholder="123 Main St"></label>
+              <div class="fr c2"><label class="fl">Apt, unit or suite<input id="bUnit" autocomplete="address-line2"></label><label class="fl">Neighborhood<input id="bHood" placeholder="e.g. Riverside"></label></div>
+              <div class="fr c3"><label class="fl">City *<input id="bCity" value="Jacksonville" autocomplete="address-level2"></label><label class="fl">State<input id="bState" value="FL" autocomplete="address-level1"></label><label class="fl">ZIP<input id="bZip" inputmode="numeric" maxlength="5" readonly></label></div>
+              <div class="fr c2"><label class="fl">Type of home *<select id="bProp"><option value="">Choose one</option><option>House</option><option>Townhome</option><option>Condo</option><option>Apartment</option><option>Business</option></select></label>
+              <label class="fl">Do you own or rent? *<select id="bOwn"><option value="">Choose one</option><option>Own</option><option>Rent</option></select></label></div>
+              <label class="check-row" id="landlordRow" hidden><input type="checkbox" id="bLandlord"><span>I have my landlord's OK for this work.</span></label>
+            </fieldset>
+            <fieldset class="fs"><legend>Getting in</legend>
+              <div class="fr c2"><label class="fl">Who will be there? *<select id="bHome"><option value="">Choose one</option><option>I'll be home</option><option>Someone else (18+) will be home</option><option>Nobody, I'll leave access</option></select></label>
+              <label class="fl">Pets<select id="bPets"><option>No pets</option><option>Dog</option><option>Cat</option><option>Dog and cat</option><option>Other</option></select></label></div>
+              <div class="fr c2"><label class="fl">Gate or door code<input id="bCode"></label><label class="fl">Parking<input id="bPark" placeholder="Driveway, street, visitor spot"></label></div>
+            </fieldset>
+            <fieldset class="fs"><legend>About the job</legend>
+              <div id="svcQs" class="fields"></div>
+              <label class="fl">Do you have the parts or fixture? *<select id="bParts"><option value="">Choose one</option><option>Yes, it's here</option><option>No, please bring what's needed</option><option>Not sure</option><option>No parts needed</option></select></label>
+              <label class="fl">Anything else Alex should know?<textarea id="bNotes" rows="2" placeholder="Where the panel is, which room, best time to call"></textarea></label>
+              <p class="muted" style="font-size:.9rem">Have photos? Text them to (631) 304-4809 after you book.</p>
+            </fieldset>
+            <fieldset class="fs"><legend>One more thing</legend>
+              <label class="fl">How did you hear about us?<select id="bHeard"><option value="">Choose one</option><option>Google</option><option>Friend or neighbor</option><option>Nextdoor</option><option>Facebook or Instagram</option><option>Saw the truck</option><option>Other</option></select></label>
+              <label class="check-row"><input type="checkbox" id="bTexts" checked><span>Text me reminders and updates about this job.</span></label>
+            </fieldset>
+            <p class="err" id="s3err" hidden></p>
+          </div>
+          <div class="navrow"><button type="button" class="btn ghost" data-back="2">Back</button><button class="btn" type="submit">Review &amp; sign</button></div>
+        </form>
+
+        <div id="s4" hidden>
+          <h2 style="margin-bottom:6px">Review &amp; sign</h2>
+          <p class="muted" style="margin-bottom:20px">Check your details, read the agreement, and sign. Nothing is charged today.</p>
+          <div class="card" style="margin-bottom:16px"><h3>Your booking</h3><div class="rows" id="estRows"></div></div>
+          <div class="paynote" style="margin-bottom:16px">
+            <b>How you'll pay</b>
+            <p class="muted" style="font-size:.95rem">Payment is due the day the work is done. Pay Alex in cash, or online from your job page with Apple Pay, Google Pay, PayPal or card. You pay for the time worked plus any parts.</p>
+            <div class="pills"><span class="pill">Cash</span><span class="pill">Apple Pay</span><span class="pill">Google Pay</span><span class="pill">PayPal</span><span class="pill">Card</span></div>
+          </div>
+          <div class="card" style="margin-bottom:16px">
+            <div class="row-between"><h3>Service agreement</h3><a href="#terms" target="_blank" rel="noopener" class="muted" style="font-size:.88rem">Open full page</a></div>
+            <div class="terms-box" id="termsBox" tabindex="0" aria-label="Service agreement"></div>
+          </div>
+          <div class="fields" style="gap:10px;margin-bottom:16px">
+            <label class="agree"><input type="checkbox" class="ag" id="ag1"><span>I've read and agree to the Porchlight Service Agreement.</span></label>
+            <label class="agree"><input type="checkbox" class="ag" id="ag2"><span>I agree to pay on the day of service for the time worked at <b id="agreeRate">$80</b>/hr plus parts, in cash or online.</span></label>
+            <label class="agree"><input type="checkbox" class="ag" id="ag3"><span>I understand the job may take longer than I booked. Alex can stay at the same rate or come back another day.</span></label>
+            <label class="agree"><input type="checkbox" class="ag" id="ag4"><span>I understand cancelling with less than 24 hours' notice may have a trip fee.</span></label>
+          </div>
+          <div class="card" style="margin-bottom:16px">
+            <h3>Sign</h3>
+            <label class="fl">Type your full name to sign *<input id="sig" autocomplete="name" class="sig-input"></label>
+            <p class="muted" style="font-size:.85rem" id="sigHint">Signed today. Typing your name counts as your signature.</p>
+          </div>
+          <p class="err" id="s4err" hidden></p>
+          <button class="btn" style="width:100%;padding:16px" id="confirmBtn" disabled>Agree &amp; book</button>
+          <div class="navrow"><button class="btn ghost" data-back="3">Back</button><span class="muted" style="font-size:.84rem;align-self:center">Free cancellation up to 24 hrs before</span></div>
+        </div>
+
+        <div id="s5" hidden class="done">
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+          <h2>You're booked.</h2>
+          <p class="muted" id="okText"></p>
+          <div class="receipt"><div class="rows" id="receipt"></div></div>
+          <div class="email" id="emailPrev"></div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center"><a class="btn" id="trackLink" href="#home">Track your job</a><button class="btn ghost" id="again">Book another</button></div>
+        </div>
+      </div>
+
+      <aside class="summary sticky" id="sumCard">
+        <span class="tag">Your booking</span>
+        <div id="sum"></div>
+        <div class="trust"><span>Nothing charged today</span><span>Pay after: cash or online</span><span>Done by Alex, start to finish</span></div>
+      </aside>
+    </div>
+  </div></section>
+</div>
+
+<!-- CUSTOMER JOB PAGE -->
+<div class="page" data-page="job" hidden><section style="padding-top:12px"><div class="wrap" style="max-width:720px" id="jobBody"></div></section></div>
+
+<!-- ALEX DASHBOARD -->
+<div class="page" data-page="alex" hidden><section style="padding-top:12px"><div class="wrap" id="dashBody"></div></section></div>
+
+<!-- TERMS -->
+<div class="page" data-page="terms" hidden><section><div class="wrap" style="max-width:780px">
+  <span class="tag">Service agreement</span>
+  <h1 style="font-size:clamp(2.2rem,5vw,3.2rem);margin:10px 0 20px">Porchlight Service Agreement</h1>
+  <div class="prose" id="termsPage"></div>
+</div></section></div>
+
+<!-- ABOUT -->
+<div class="page" data-page="about" hidden>
+  <section><div class="wrap split">
+    <div style="display:grid;gap:18px">
+      <span class="tag">About</span>
+      <h1 style="font-size:clamp(2.4rem,6vw,4.2rem)">Hi, I'm Alex Montalbano.</h1>
+      <p style="font-size:1.15rem">People kept asking me the same thing: do you know someone who'll just show up and do it right? So I started Porchlight.</p>
+      <p class="muted">One hourly rate. Book online. Pay when it's done. If it takes longer, I can stay or come back. Your call.</p>
+      <p class="muted">I do Tesla chargers, lights, fans and outlets. I fix leaky sinks and running toilets. I help with Wi-Fi, TVs and doorbell cameras. And a lot of the small stuff in between.</p>
+      <div><a class="btn" href="#book">Book a time with Alex</a></div>
+    </div>
+    <div class="card" style="gap:4px">
+      <div style="display:flex;gap:14px;align-items:center;margin-bottom:10px"><span class="avatar" style="width:64px;height:64px;font-size:1.4rem">AM</span><div><b style="font-size:1.1rem">Alex Montalbano</b><p class="muted" style="font-size:.9rem">Owner, Porchlight</p></div></div>
+      <div class="rows">
+        <div><span>Based in</span><span>Jacksonville, FL</span></div>
+        <div><span>Hours</span><span>Mon–Sat · 8am–6pm</span></div>
+        <div><span>Rate</span><span>$80 / hr within 10 mi</span></div>
+        <div><span>Text</span><span>(631) 304-4809</span></div>
+        <div><span>Pay with</span><span>Apple Pay · Card · PayPal · Cash</span></div>
+        <div><span>Covers</span><span>Duval · St. Johns · Clay</span></div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- CONTACT -->
+<div class="page" data-page="contact" hidden>
+  <section><div class="wrap split">
+    <div style="display:grid;gap:16px">
+      <span class="tag">Contact</span>
+      <h1 style="font-size:clamp(2.4rem,6vw,4rem)">Ask Alex anything.</h1>
+      <p class="muted" style="font-size:1.1rem">Have a question? Send me a note. I'll get back to you the same day.</p>
+      <div class="card" style="padding:20px"><div class="rows">
+        <div><span>Call or text</span><span class="sel">(631) 304-4809</span></div>
+        <div><span>Email</span><span class="sel">montalbanoa23@gmail.com</span></div>
+        <div><span>Hours</span><span>Mon–Sat · 8am–6pm</span></div>
+      </div></div>
+    </div>
+    <div class="card">
+      <form id="contactForm" class="fields" novalidate>
+        <label class="fl">Name<input id="cName" autocomplete="name"></label>
+        <div class="fr c2"><label class="fl">Mobile<input id="cPhone" type="tel" autocomplete="tel"></label><label class="fl">ZIP<input id="cZip" inputmode="numeric" maxlength="5"></label></div>
+        <label class="fl">What's it about?<select id="cTopic"></select></label>
+        <label class="fl">Message<textarea id="cMsg" rows="4"></textarea></label>
+        <p class="err" id="cErr" hidden>Add your name, mobile and a short message.</p>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+      <div id="cOk" class="done" hidden style="padding-block:12px"><div class="check" style="width:64px;height:64px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><h3>Message sent</h3><p class="muted">Thanks. Alex will call or text you back today.</p></div>
+    </div>
+  </div></section>
+</div>
+</main>
+
+<footer class="site"><div class="wrap cols">
+  <div style="display:grid;gap:12px;align-content:start"><a class="brand" href="#home" style="padding:0"><svg class="logo" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="10" fill="var(--hero)"/><path d="M10 21 22 11l12 10" fill="none" stroke="#f1f3f6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 19v14h17V19" fill="none" stroke="#f1f3f6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 16.5v3.5" stroke="#f1f3f6" stroke-width="1.6" stroke-linecap="round"/><path d="M19.8 20.2h4.4l-.5 2.6h-3.4Z" fill="#f1f3f6"/><circle cx="22" cy="25.6" r="2.8" fill="#c9963f"/><path d="M17.2 25.6h-1.4M28.2 25.6h-1.4M18.6 28.8l-1 1M25.4 28.8l1 1" stroke="#c9963f" stroke-width="1.4" stroke-linecap="round"/></svg><span class="word">Porchlight<small>Jacksonville, FL</small></span></a><p class="muted" style="font-size:.92rem">Home help in Jacksonville, FL. Every job done by Alex Montalbano.</p><p style="font-size:.92rem;font-weight:600">(631) 304-4809<br>montalbanoa23@gmail.com</p><p class="muted" style="font-size:.85rem">© 2026 Porchlight</p></div>
+  <div><h4>Services</h4><div id="fSvc"></div></div>
+  <div><h4>Areas</h4><div id="fArea"></div></div>
+  <div><h4>Company</h4><a href="#pricing">Pricing</a><a href="#about">About Alex</a><a href="#contact">Contact</a><a href="#book">Book a time</a><a href="#terms">Service agreement</a><a href="#alex">Alex's dashboard</a></div>
+</div></footer>
+
+<div class="overlay" id="overlay" hidden><div style="display:grid;gap:14px;justify-items:center"><div class="spinner"></div><b id="payMsg">Processing…</b></div></div>
