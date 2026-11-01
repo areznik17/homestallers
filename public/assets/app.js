@@ -747,7 +747,7 @@ function route(){
   if(page==="privacy"){$("privacyPage").innerHTML=privacyHTML();title="Privacy Policy | Homestallers";desc="How Homestallers collects, uses and protects your information when you book or contact us in Jacksonville, FL."}
   if(page==="guides"){title="Home Guides for Jacksonville Homeowners | Homestallers";desc="Plain answers on TV mounting costs, TV heights, hiding wires, furniture assembly and hurricane prep for Jacksonville homes."}
   if(page==="pay"){title="Make a Payment | Homestallers";desc="Pay securely for extra time, parts or a tip after your Homestallers job in Jacksonville. Card, Apple Pay or Google Pay."}
-  document.title=title;setDesc(desc);
+  document.title=title;setDesc(desc);linkContacts();
   document.querySelectorAll(".page").forEach(p=>p.hidden=p.dataset.page!==page);document.body.dataset.page=page;
   const navKey=guide?"guides":pk||ts?"services":area||county?"areas":page;
   document.querySelectorAll(".links a").forEach(a=>a.toggleAttribute("aria-current",a.getAttribute("href")==="#"+navKey));
@@ -1008,3 +1008,13 @@ if(STATIC){const q=new URLSearchParams(location.search).get("svc");if(q&&P(q)){p
   function setSms(){document.querySelectorAll("[data-sms]").forEach(function(a){a.setAttribute("href","sms:?&body="+encodeURIComponent(MSG+" "+URL_))})}
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",setSms);else setSms();
 })();
+
+/* make phone numbers and emails clickable everywhere */
+function linkContacts(root){
+  const re=/\(631\) 304-4809|homestallers@gmail\.com/g;
+  const w=document.createTreeWalker(root||document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>{if(!re.test(n.nodeValue)){re.lastIndex=0;return NodeFilter.FILTER_REJECT}re.lastIndex=0;const p=n.parentElement;return p&&!p.closest("a,button,script,style,textarea,input,option,title")?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT}});
+  const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  nodes.forEach(n=>{const frag=document.createDocumentFragment();let last=0;n.nodeValue.replace(re,(m,i)=>{frag.append(n.nodeValue.slice(last,i));const a=document.createElement("a");a.textContent=m;a.className="contact-link";a.href=m.includes("@")?"mailto:"+m:"tel:+16313044809";frag.append(a);last=i+m.length});frag.append(n.nodeValue.slice(last));n.replaceWith(frag)});
+}
+
+linkContacts();

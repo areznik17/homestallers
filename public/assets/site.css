@@ -861,5 +861,9 @@ footer.site .word small{white-space:nowrap;letter-spacing:.1em;font-size:.62rem}
   body[data-page="book"],body[data-page="pay"]{padding-bottom:0}
 }
 @media (max-width:640px){.foot-links{flex-wrap:wrap;gap:8px 16px}.foot-links a,.foot-share{white-space:nowrap}}
+a.contact-link{color:inherit;font-weight:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:3px}
+a.contact-link:hover{color:var(--blue);text-decoration-color:currentColor}
+footer.site a.contact-link{display:inline;padding:0;font-size:inherit;color:#fff}
+footer.site a.contact-link:hover{color:#f39a5c}
 
 html{scroll-behavior:smooth}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
